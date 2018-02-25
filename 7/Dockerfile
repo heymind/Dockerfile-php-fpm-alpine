@@ -5,6 +5,10 @@ ENV MAX_UPLOAD          50M
 ENV PHP_MAX_FILE_UPLOAD 200
 ENV PHP_MAX_POST        100M
 RUN apk --update add \
+        php7-session \
+        php7-exif \
+        php7-mbstring \
+        php7-ldap \
 		php7-mcrypt \
 		php7-soap \
 		php7-openssl \
