@@ -46,6 +46,8 @@ RUN apk --update add \
     mkdir -p /var/www/html && \
     rm -rf /var/cache/apk/*
 
+RUN ln -s  /usr/bin/php5 /bin/php
+
 WORKDIR /var/www/html
 EXPOSE 9000
 CMD ["php-fpm5"]
